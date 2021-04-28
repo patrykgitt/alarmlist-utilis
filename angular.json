@@ -53,8 +53,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"	              
             ],
             "scripts": [
-              "src/config.js",
-              "src/me-webserver-utlis.js"
+              "src/app/config.js",
+              "src/app/me-webserver-utlis.js"
             ]
           },
           "configurations": {

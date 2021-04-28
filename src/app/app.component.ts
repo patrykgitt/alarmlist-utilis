@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Alarm } from "./alarm";
 import { AlarmMgnt } from "./alarmMgnt";
+//import * as custom from 'src/custom.js';
+//import * as config from './config.js';
 
 @Component({
   selector: 'app-root',
