@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Alarm } from "./alarm";
 import { AlarmMgnt } from "./alarmMgnt";
-//import * as custom from 'src/custom.js';
-//import * as config from './config.js';
+//import * as custom from './custom.js';
+import * as config from './config.js';
+import * as test from './test.js';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,8 @@ import { AlarmMgnt } from "./alarmMgnt";
 })
 export class AppComponent {
   private currDate = new Date();
+  private test = console.log(test.my());
+  //private test = console.log(config.plcRegs);
   private list = new AlarmMgnt("Alarm", [
     new Alarm("J6 axis overspeed", this.currDate, true, true),
     new Alarm("Undervoltage error", this.currDate, true),

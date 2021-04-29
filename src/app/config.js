@@ -1,4 +1,4 @@
-var plcRegs = [
+export var plcRegs = [
   {
     device: "M0",
     type: "bool",
