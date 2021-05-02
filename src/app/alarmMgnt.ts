@@ -7,7 +7,7 @@ export class AlarmMgnt {
         // no statements required
         this.tomek = new test2.Human(20);
         console.log(this.tomek);
-        / console.log(test.my());
+        // console.log(test.my());
         //tomek.age();
     }
 
