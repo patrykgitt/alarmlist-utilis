@@ -13,4 +13,7 @@ export class AlarmMgnt {
     addItem(alarm: string) {
         this.alarms.push(new Alarm(alarm));
     }
+    updateAlarms(){
+      
+    }
 }
