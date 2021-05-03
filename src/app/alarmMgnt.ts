@@ -1,13 +1,13 @@
 import { Alarm } from "./alarm";
-import * as test2 from "./test2.js";
+import { Human } from "./test2";//bez js tez dziala
 import * as test from './test.js';
 import { Human2 } from "./test3";
-
+import {PlcCommunication} from "./me-webserver-utils"
 export class AlarmMgnt {
     private tomek;
     constructor(public listName: string, private alarms: Alarm[] = []) {
         // no statements required
-        this.tomek = new test2.Human(20);
+        this.tomek = new Human(20);
         console.log(this.tomek);
         this.tomek2 = new Human2(22);
         console.log(this.tomek2);
@@ -28,3 +28,11 @@ export class AlarmMgnt {
 
     }
 }
+
+PlcCommunication.prototype.updateElements = function(data) {
+  //jako taka ktora nie modyfikuje dancyh?
+  //for (let i = 0; i < plcRegs.length; i++) {
+    ////document.getElementById(plcRegs[i].elementId).value = data[i];
+    //document.getElementById(plcRegs[i].elementId).innerHTML = data[i];
+  //}
+};
