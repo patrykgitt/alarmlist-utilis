@@ -13,6 +13,7 @@ export class AlarmMgnt {
         console.log(this.tomek2);
         this.tomek2.age2();
         this.tomek.age2();
+        this.tomek.updateElements();
         // console.log(test.my());
         //tomek.age();
     }
@@ -29,10 +30,11 @@ export class AlarmMgnt {
     }
 }
 
-PlcCommunication.prototype.updateElements = function(data) {
+Human.prototype.updateElements = function(data) {
   //jako taka ktora nie modyfikuje dancyh?
   //for (let i = 0; i < plcRegs.length; i++) {
     ////document.getElementById(plcRegs[i].elementId).value = data[i];
     //document.getElementById(plcRegs[i].elementId).innerHTML = data[i];
   //}
+  console.log(100);
 };
