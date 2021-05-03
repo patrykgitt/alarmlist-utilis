@@ -36,5 +36,6 @@ Human.prototype.updateElements = function(data) {
     ////document.getElementById(plcRegs[i].elementId).value = data[i];
     //document.getElementById(plcRegs[i].elementId).innerHTML = data[i];
   //}
+  //
   console.log(100);
 };
