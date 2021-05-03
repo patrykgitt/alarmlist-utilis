@@ -78,3 +78,16 @@ Human.prototype.updateElements = function(data) {
   //
   console.log(100);
 };
+
+PlcCommunication.prototype.updateElements = function(data) {
+  //console.log(data);
+  //jako taka ktora nie modyfikuje dancyh?
+  //for (let i = 0; i < plcRegs.length; i++) {
+    ////document.getElementById(plcRegs[i].elementId).value = data[i];
+    //document.getElementById(plcRegs[i].elementId).innerHTML = data[i];
+  //}
+};
+PlcCommunication.prototype.updateElementsError = function(errorMsg) {
+  //console.log(errorMsg);
+  //document.getElementById('errorDisplay').innerHTML = errorMsg;
+};

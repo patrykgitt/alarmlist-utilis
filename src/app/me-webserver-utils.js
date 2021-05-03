@@ -62,7 +62,7 @@ export class PlcCommunication {
     }; //callback i callbackError sa podawane do funkcji
     xhr.onreadystatechange = func;
     xhr.send(this.getRequestStringRead(dataArray));
-    console.log(this.getRequestStringRead(dataArray));
+    //console.log(this.getRequestStringRead(dataArray));
     // xhr timeout
   }
 
@@ -82,7 +82,7 @@ export class PlcCommunication {
     xhr.onload = FUNC;
 
     xhr.send(requestString);
-    console.log(requestString);
+    //console.log(requestString);
   }
 
   callbackMain(xhr, object, dataArray, callback, callbackError) {
@@ -275,7 +275,7 @@ export class PlcCommunication {
 
   parseIntFromHexString(str) {
     let int = parseInt(str, 16);
-    console.log(0x8000);
+    //console.log(0x8000);
     return int >= 0x8000 ? int - 0x8000 * 2 : int;
   }
 
